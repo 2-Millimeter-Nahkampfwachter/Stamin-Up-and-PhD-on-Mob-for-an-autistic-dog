@@ -220,7 +220,7 @@ playerdamagelastcheck( einflictor, eattacker, idamage, idflags, smeansofdeath, s
 			}
 			return 0;
 		}
-		if(smeansofdeath == "MOD_GRENADE" || smeansofdeath == "MOD_GRENADE_SPLASH" || eattacker == self){
+		if(smeansofdeath == "MOD_GRENADE" || smeansofdeath == "MOD_GRENADE_SPLASH" || eattacker == self && !smeansofdeath == "MOD_UNKNOWN"){ //acid trap weird
 			return 0;
 		}
 	}
